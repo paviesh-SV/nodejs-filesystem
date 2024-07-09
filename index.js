@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 //creating folder if it doesn't exist
-const outputFolder = "./Output"
+const outputFolder = "./Current_TimeStamp"
 if(!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder);
 }
